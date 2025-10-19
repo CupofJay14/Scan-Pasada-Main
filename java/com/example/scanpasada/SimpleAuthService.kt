@@ -9,7 +9,7 @@ import kotlinx.coroutines.withContext
 
 class SimpleAuthService {
 
-    // Simple sign up - just create user in Supabase Auth
+    // sign up - just create user in Supabase Auth
     fun signUp(email: String, password: String): Boolean = runBlocking {
         withContext(Dispatchers.IO) {
             try {
@@ -30,7 +30,7 @@ class SimpleAuthService {
         }
     }
 
-    // Simple sign in - just authenticate with Supabase
+    // sign in - just authenticate with Supabase
     fun signIn(email: String, password: String): UserInfo? = runBlocking {
         withContext(Dispatchers.IO) {
             try {
@@ -360,3 +360,4 @@ class SimpleAuthService {
         }
     }
 }
+
